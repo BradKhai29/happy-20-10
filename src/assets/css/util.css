@@ -71,6 +71,10 @@
 	padding: 16px;
 }
 
+.pb-lg {
+	padding-bottom: 16px;
+}
+
 .gap-sm {
 	column-gap: 8px;
 }

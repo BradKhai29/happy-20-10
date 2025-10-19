@@ -43,6 +43,7 @@ export const GiftCard = () => {
     function setOption(optionIndex: number) {
         setOptIndex(optionIndex);
         setOptContent(contents[optionIndex]);
+        setShowMsg(false);
     }
 
     function toggleMessage() {
@@ -76,8 +77,8 @@ export const GiftCard = () => {
                         </span>
                     ))}
                 </div>
-                <div className={`mt-lg`}>
-                    <div className={`txt-left ${classes.padding} ${classes.text}`}>{optContent.shortDescription}</div>
+                <div className={`mt-lg pb-lg`}>
+                    <div className={`${classes.padding} ${classes.text}`}>{optContent.shortDescription}</div>
                     <div className="d-flex justify-between align-center mt-lg">
                         <div className={`${classes['show-btn']} bg-accent-2 txt-primary`} onClick={toggleMessage}>{showMsg ? 'Xem lời chúc' : 'Xem ảnh'}</div>
                         <div>
