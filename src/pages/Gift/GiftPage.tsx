@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-export const GiftPage = (props: Props) => {
+export const GiftPage = () => {
     return (
         <div>GiftPage</div>
     )

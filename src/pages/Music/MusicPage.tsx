@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-export const MusicPage = (props: Props) => {
+export const MusicPage = () => {
     return (
         <div>MusicPage</div>
     )
