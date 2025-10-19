@@ -1,15 +1,14 @@
-import React from 'react'
 import homeIcon from "../../assets/svg/home.svg";
 import classes from "./Navbar.module.css";
 
 type NavHomeBtnProps = {
-    link: string,
+    onClick?: () => void,
     selected?: boolean
 };
 
-export const NavHomeBtn = ({ link = null, selected = false }: NavHomeBtnProps) => {
+export const NavHomeBtn = ({ onClick, selected = false }: NavHomeBtnProps) => {
     return (
-        <div className={`${classes['navbar-btn']} bg-primary ${selected ? classes.selected : ''}`}>
+        <div className={`${classes['navbar-btn']} bg-primary ${selected ? classes.selected : ''}`} onClick={onClick}>
             <img
                 className={classes['navbar-icon']}
                 src={homeIcon}

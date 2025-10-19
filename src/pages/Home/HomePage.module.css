@@ -35,3 +35,7 @@
 	background-color: rgba(0, 0, 0, 0.4); /* Black with 50% opacity */
 	z-index: 1; /* Place the overlay above the background image */
 }
+
+.explore-btn {
+    border-radius: 16px;
+}

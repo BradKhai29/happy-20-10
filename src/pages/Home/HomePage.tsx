@@ -1,11 +1,8 @@
-import React from 'react'
 import homeBgImg from '../../assets/img/home-background.jpg';
 import loveIcon from '../../assets/svg/love.svg';
 import classes from './HomePage.module.css';
 
-type Props = {}
-
-export const HomePage = (props: Props) => {
+export const HomePage = () => {
     return (
         <section>
             {/* Card image wrapper */}
@@ -25,8 +22,8 @@ export const HomePage = (props: Props) => {
             </div>
 
             <section className='mt-lg'>
-                <div className='d-flex'>
-                    <span>Cùng khám phá xem thử</span>
+                <div className={`${classes['explore-btn']} d-flex bg-accent-2`}>
+                    <span className='txt-primary fw-bold'>Nhà mình cùng khám phá nha</span>
                     <div>
                         <img src={loveIcon} alt="" />
                     </div>

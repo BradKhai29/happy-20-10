@@ -1,15 +1,14 @@
-import React from 'react'
 import giftIcon from "../../assets/svg/smile.svg";
 import classes from "./Navbar.module.css";
 
 type NavGiftBtnProps = {
-    link: string,
+    onClick?: () => void,
     selected?: boolean
 };
 
-export const NavGiftBtn = ({ link = null, selected = false }: NavGiftBtnProps) => {
+export const NavGiftBtn = ({ onClick, selected = false }: NavGiftBtnProps) => {
     return (
-        <div className={`${classes['navbar-btn']} bg-primary ${selected ? classes.selected : ''}`}>
+        <div className={`${classes['navbar-btn']} bg-primary ${selected ? classes.selected : ''}`} onClick={onClick}>
             <img
                 className={classes['navbar-icon']}
                 src={giftIcon}

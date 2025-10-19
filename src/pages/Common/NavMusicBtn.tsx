@@ -1,15 +1,14 @@
-import React from 'react'
 import musicIcon from "../../assets/svg/song.svg";
 import classes from "./Navbar.module.css";
 
 type NavMusicBtnProps = {
-    link: string,
+    onClick?: () => void,
     selected?: boolean
 };
 
-export const NavMusicBtn = ({ link = null, selected = false }: NavMusicBtnProps) => {
+export const NavMusicBtn = ({ onClick, selected = false }: NavMusicBtnProps) => {
     return (
-        <div className={`${classes['navbar-btn']} bg-primary ${selected ? classes.selected : ''}`}>
+        <div className={`${classes['navbar-btn']} bg-primary ${selected ? classes.selected : ''}`} onClick={onClick}>
             <img
                 className={classes['navbar-icon']}
                 src={musicIcon}
