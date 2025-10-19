@@ -38,17 +38,17 @@ const contentOpts = {
 export const GiftCard = () => {
     const [optIndex, setOptIndex] = useState(contentOpts.GrandMa);
     const [optContent, setOptContent] = useState(contents[contentOpts.GrandMa]);
-    const [showMsg, setShowMsg] = useState(true);
+    const [showImg, setShowImg] = useState(true);
 
     function setOption(optionIndex: number) {
         setOptIndex(optionIndex);
         setOptContent(contents[optionIndex]);
-        setShowMsg(false);
+        setShowImg(true);
     }
 
     function toggleMessage() {
-        const isShow = !showMsg;
-        setShowMsg(isShow);
+        const isShow = !showImg;
+        setShowImg(isShow);
     }
 
     return (
@@ -60,13 +60,13 @@ export const GiftCard = () => {
                         <img src={menuIcon} alt="menu-icon" className="icon-xl" />
                     </div>
                 </div>
-                <div className={`${classes['gift-card-img']} mt-lg radius-sm clip-content ${showMsg ? '' : 'd-none'}`}>
+                <div className={`${classes['gift-card-img']} mt-lg radius-sm clip-content ${showImg ? '' : 'd-none'}`}>
                     <img className={`img ${optIndex == contentOpts.GrandMa ? '' : 'd-none'}`} src={grandmaImg} />
                     <img className={`img ${optIndex == contentOpts.Mom ? '' : 'd-none'}`} src={momImg} alt="" />
                     <img className={`img ${optIndex == contentOpts.Aunt1 ? '' : 'd-none'}`} src={aunt1Img} alt="" />
                     <img className={`img ${optIndex == contentOpts.Aunt2 ? '' : 'd-none'}`} src={aunt2Img} alt="" />
                 </div>
-                <div className={`${classes['gift-card-msg']} mt-lg radius-sm bg-primary clip-content ${showMsg ? 'd-none' : ''}`}>
+                <div className={`${classes['gift-card-msg']} mt-lg radius-sm bg-primary clip-content ${showImg ? 'd-none' : ''}`}>
                     <span className="txt-accent-2">
                         {optContent.longDescription}
                     </span>
@@ -77,10 +77,10 @@ export const GiftCard = () => {
                         </span>
                     ))}
                 </div>
-                <div className={`mt-lg pb-lg`}>
-                    <div className={`${classes.padding} ${classes.text}`}>{optContent.shortDescription}</div>
+                <div className={`mt-lg`}>
+                    <div className={`${classes.padding} ${classes.text} txt-accent-2`}>{optContent.shortDescription}</div>
                     <div className="d-flex justify-between align-center mt-lg">
-                        <div className={`${classes['show-btn']} bg-accent-2 txt-primary`} onClick={toggleMessage}>{showMsg ? 'Xem lời chúc' : 'Xem ảnh'}</div>
+                        <div className={`${classes['show-btn']} bg-accent-2 txt-primary`} onClick={toggleMessage}>{showImg ? 'Xem lời chúc' : 'Xem ảnh'}</div>
                         <div>
 
                         </div>

@@ -18,7 +18,7 @@ export const MusicPage = ({ isSelected = false }: MusicPageProps) => {
                     <img src={musicIcon} className='icon-xl' alt="rose-icon" />
                 </div>
             </div>
-            <div className='mt-lg'>
+            <div className='mt-lg pb-lg mb-lg'>
                 <MusicPlayer></MusicPlayer>
             </div>
         </section>
