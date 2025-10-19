@@ -5,22 +5,35 @@ import { NavGiftBtn } from './NavGiftBtn'
 import { NavMusicBtn } from './NavMusicBtn'
 import { PageManager, AppPages } from '../../states/CurrentPage';
 
-export const Navbar = () => {
+type NavbarProps = {
+    onChange?: () => void;
+}
+
+export const Navbar = ({ onChange }: NavbarProps) => {
     const [pageIndex, setPageIndex] = useState(AppPages.HomePage);
+
+    function triggerOnChange() {
+        if (onChange != null) {
+            onChange();
+        }
+    }
 
     function setHomePage() {
         PageManager.setHomePage();
         setPageIndex(PageManager.currentPage);
+        triggerOnChange();
     }
 
     function setGiftPage() {
         PageManager.setGiftPage();
         setPageIndex(PageManager.currentPage);
+        triggerOnChange();
     }
 
     function setMusicPage() {
         PageManager.setMusicPage();
         setPageIndex(PageManager.currentPage);
+        triggerOnChange();
     }
 
     return (

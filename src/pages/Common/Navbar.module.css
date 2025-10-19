@@ -3,16 +3,18 @@
 
     display: flex;
     column-gap: var(--column-gap);
-    padding: 16px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 16px;
 	box-shadow: #a4677c 0px 1px 4px;
+	width: 100%;
+	flex-grow: 1;
 }
 
 .navbar-btn {
 	display: flex;
 	align-items: center;
-	padding: 12px;
-	border-radius: 16px;
+	padding: 8px;
+	border-radius: 12px;
 	border-bottom: 4px solid #e8a9a9;
 	box-shadow: #a4677c 0px 1px 4px;
 }
@@ -28,6 +30,9 @@
 }
 
 .navbar-btn-text {
+	--font-size: 18px;
+
+	font-size: var(--font-size);
 	display: none;
 }
 

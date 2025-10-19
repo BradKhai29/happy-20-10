@@ -14,7 +14,7 @@ export const NavMusicBtn = ({ onClick, selected = false }: NavMusicBtnProps) => 
                 src={musicIcon}
                 alt="Menu icon"
             />
-            <span className={`ml-sm fw-bold txt-accent-1 txt-md ${classes['navbar-btn-text']}`}>Nhạc 20/10</span>
+            <span className={`ml-sm fw-bold txt-accent-1 ${classes['navbar-btn-text']}`}>Nhạc 20/10</span>
         </div>
     )
 }

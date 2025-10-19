@@ -14,7 +14,7 @@ export const NavGiftBtn = ({ onClick, selected = false }: NavGiftBtnProps) => {
                 src={giftIcon}
                 alt="Menu icon"
             />
-            <span className={`ml-sm fw-bold txt-accent-1 txt-md ${classes['navbar-btn-text']}`}>Lời chúc</span>
+            <span className={`ml-sm fw-bold txt-accent-1 ${classes['navbar-btn-text']}`}>Lời chúc</span>
         </div>
     )
 }

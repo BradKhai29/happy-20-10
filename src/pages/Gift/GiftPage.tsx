@@ -1,5 +1,14 @@
-export const GiftPage = () => {
+type GiftPageProps = {
+    isSelected?: boolean
+}
+
+export const GiftPage = ({ isSelected = false }: GiftPageProps) => {
+    console.log("Gift page ");
+
+
     return (
-        <div>GiftPage</div>
+        <section id="gift-page" className={isSelected ? '' : 'd-none'}>
+            GiftPage
+        </section>
     )
 }

@@ -14,7 +14,7 @@ export const NavHomeBtn = ({ onClick, selected = false }: NavHomeBtnProps) => {
                 src={homeIcon}
                 alt="Menu icon"
             />
-            <span className={`ml-sm fw-bold txt-accent-1 txt-md ${classes['navbar-btn-text']}`}>Gia đình</span>
+            <span className={`ml-sm fw-bold txt-accent-1 ${classes['navbar-btn-text']}`}>Gia đình</span>
         </div>
     )
 }

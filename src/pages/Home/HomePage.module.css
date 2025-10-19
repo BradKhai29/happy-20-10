@@ -12,8 +12,8 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .bg-img {
@@ -37,5 +37,28 @@
 }
 
 .explore-btn {
-    border-radius: 16px;
+	border-radius: 16px;
+	padding: 16px;
+	align-items: center;
+	justify-content: center;
+    column-gap: 12px;
+}
+
+.explore-btn .love-icon {
+	border-radius: 100%;
+	padding: 4.8px;
+	overflow: hidden;
+}
+
+.love-icon > img {
+	--btn-size: 28px;
+	width: var(--btn-size) !important;
+	height: var(--btn-size) !important;
+}
+
+.btn-text {
+	--font-size: 18px;
+
+	font-size: var(--font-size);
+    font-weight: 640;
 }
