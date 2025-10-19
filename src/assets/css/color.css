@@ -1,0 +1,96 @@
+/* Define all related colors for development */
+
+:root {
+	--primary: #fff8f8; /* Blossom white */
+	--primary-hover: #fff8f8; /* Blossom white */
+	--secondary: #f9eaeb; /* Pale Pink */
+	--secondary-hover: #f9eaeb; /* Pale Pink */
+	--accent-1: #e8a9a9; /* Rose Gold */
+	--accent-1-hover: #e8a9a9; /* Rose Gold */
+	--accent-2: #a4677c; /* Deep Berry */
+	--accent-2-hover: #a4677c; /* Deep Berry */
+	--accent-3: #4f4448; /* Grayish Pink */
+	--accent-3-hover: #4f4448; /* Grayish Pink */
+}
+
+/* Background section */
+.bg-primary {
+	background-color: var(--primary);
+}
+
+.bg-primary.hover:hover {
+	background-color: var(--primary-hover);
+}
+
+.bg-secondary {
+	background-color: var(--secondary);
+}
+
+.bg-secondary.hover:hover {
+	background-color: var(--secondary-hover);
+}
+
+.bg-accent-1 {
+	background-color: var(--accent-1);
+}
+
+.bg-accent-1.hover:hover {
+	background-color: var(--accent-1-hover);
+}
+
+.bg-accent-2 {
+	background-color: var(--accent-2);
+}
+
+.bg-accent-2.hover:hover {
+	background-color: var(--accent-2-hover);
+}
+
+.bg-accent-3 {
+	background-color: var(--accent-3);
+}
+
+.bg-accent-3.hover:hover {
+	background-color: var(--accent-3-hover);
+}
+
+/* Text color section */
+.txt-primary {
+	color: var(--primary);
+}
+
+.txt-primary.hover:hover {
+	color: var(--primary);
+}
+
+.txt-secondary {
+	color: var(--secondary);
+}
+
+.txt-secondary.hover:hover {
+	color: var(--secondary);
+}
+
+.txt-accent-1 {
+	color: var(--accent-1);
+}
+
+.txt-accent-1.hover:hover {
+	color: var(--accent-1);
+}
+
+.txt-accent-2 {
+	color: var(--accent-2);
+}
+
+.txt-accent-2.hover:hover {
+	color: var(--accent-2);
+}
+
+.txt-accent-3 {
+	color: var(--accent-3);
+}
+
+.txt-accent-3.hover:hover {
+	color: var(--accent-3);
+}

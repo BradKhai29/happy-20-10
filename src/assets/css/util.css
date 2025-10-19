@@ -1,0 +1,66 @@
+/* Media query support */
+:root {
+	--laptop-width: 1280px;
+	--monitor-width: 1890px;
+}
+
+/* Display section */
+.d-flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+/* Padding section */
+.ml-sm {
+	margin-left: 8px;
+}
+
+.ml-md {
+	margin-left: 12px;
+}
+
+.mt-md {
+	margin-top: 12px;
+}
+
+.ml-lg {
+	margin-left: 16px;
+}
+
+.mt-lg {
+	margin-top: 16px;
+}
+
+.p-lg {
+	padding: 16px;
+}
+
+/* Text section */
+.fw-bold {
+	font-weight: bold;
+}
+
+/* Text-size section */
+.txt-sm {
+	font-size: 1rem;
+}
+
+.txt-md {
+	font-size: 1.6rem;
+}
+
+.txt-lg {
+	font-size: 2rem;
+}
+
+/* Image section */
+.img {
+	width: 100%;
+}
