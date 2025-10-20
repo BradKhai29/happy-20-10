@@ -39,6 +39,7 @@ export const GiftCard = () => {
     const [optIndex, setOptIndex] = useState(contentOpts.GrandMa);
     const [optContent, setOptContent] = useState(contents[contentOpts.GrandMa]);
     const [showImg, setShowImg] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
 
     function setOption(optionIndex: number) {
         setOptIndex(optionIndex);
@@ -51,13 +52,27 @@ export const GiftCard = () => {
         setShowImg(isShow);
     }
 
+    function toggleMenu() {
+        const isShow = !showMenu;
+        setShowMenu(isShow);
+    }
+
     return (
         <div className={`${classes['gift-card']} d-flex w-100 flex-column bg-secondary`}>
             <div className={`${classes.content} mt-md`}>
                 <div className="d-flex align-center justify-between">
                     <p className="txt-accent-2 fw-bold txt-md my-none">{optContent.title}</p>
-                    <div className="d-flex align-center">
-                        <img src={menuIcon} alt="menu-icon" className="icon-xl" />
+                    <div className={`d-flex align-center ${classes['dropdown']}`} onClick={toggleMenu}>
+                        <img src={menuIcon} alt="menu-icon" className={`icon-xl ${classes['menu-btn']}`} />
+                        <div className={`d-flex align-center ${classes['dropdown-menu']} ${showMenu ? classes['show'] : ''} bg-accent-1`}>
+                            <div className="">
+                                {contents.map((item, index) => (
+                                    <div key={index} onClick={() => setOption(index)} className={`${classes['dropdown-item']} txt-primary`}>
+                                        {item.title}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={`${classes['gift-card-img']} mt-lg radius-sm clip-content ${showImg ? '' : 'd-none'}`}>

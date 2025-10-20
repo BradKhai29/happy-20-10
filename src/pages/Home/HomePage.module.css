@@ -41,7 +41,7 @@
 	padding: 16px;
 	align-items: center;
 	justify-content: center;
-    column-gap: 12px;
+	column-gap: 12px;
 }
 
 .explore-btn .love-icon {
@@ -60,5 +60,6 @@
 	--font-size: 18px;
 
 	font-size: var(--font-size);
-    font-weight: 640;
+	font-weight: 640;
 }
+

@@ -3,7 +3,7 @@ import './assets/css/App.css'
 import { Navbar } from './pages/Common/Navbar'
 import { GiftPage } from './pages/Gift/GiftPage'
 import { HomePage } from './pages/Home/HomePage'
-import { MusicPage } from './pages/Music/MusicPage'
+// import { MusicPage } from './pages/Music/MusicPage'
 import { AppPages, PageManager } from './states/CurrentPage'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         </section>
         <HomePage isSelected={currentPage == AppPages.HomePage}></HomePage>
         <GiftPage isSelected={currentPage == AppPages.GiftPage}></GiftPage>
-        <MusicPage isSelected={currentPage == AppPages.MusicPage}></MusicPage>
+        {/* <MusicPage isSelected={currentPage == AppPages.MusicPage}></MusicPage> */}
       </section>
     </>
   )
